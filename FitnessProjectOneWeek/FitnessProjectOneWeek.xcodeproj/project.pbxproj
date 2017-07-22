@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		506FE9A43719A58930B70560 /* libPods-FitnessProjectOneWeek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E1FE68A8054CE4F45B842F /* libPods-FitnessProjectOneWeek.a */; };
 		9BAA2D6F1F1FF3900055BA0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA2D6E1F1FF3900055BA0D /* AppDelegate.m */; };
-		9BAA2D721F1FF3900055BA0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA2D711F1FF3900055BA0D /* ViewController.m */; };
+		9BAA2D721F1FF3900055BA0D /* StartExperience.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA2D711F1FF3900055BA0D /* StartExperience.m */; };
 		9BAA2D751F1FF3900055BA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAA2D731F1FF3900055BA0D /* Main.storyboard */; };
 		9BAA2D771F1FF3900055BA0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BAA2D761F1FF3900055BA0D /* Assets.xcassets */; };
 		9BAA2D7A1F1FF3900055BA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAA2D781F1FF3900055BA0D /* LaunchScreen.storyboard */; };
@@ -18,11 +18,12 @@
 
 /* Begin PBXFileReference section */
 		3489970122AED83F48CC0B1A /* Pods-FitnessProjectOneWeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessProjectOneWeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessProjectOneWeek/Pods-FitnessProjectOneWeek.release.xcconfig"; sourceTree = "<group>"; };
+		9B6D26AC1F24154B002FAAE3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		9BAA2D6A1F1FF3900055BA0D /* FitnessProjectOneWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessProjectOneWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAA2D6D1F1FF3900055BA0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BAA2D6E1F1FF3900055BA0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9BAA2D701F1FF3900055BA0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9BAA2D711F1FF3900055BA0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BAA2D701F1FF3900055BA0D /* StartExperience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartExperience.h; sourceTree = "<group>"; };
+		9BAA2D711F1FF3900055BA0D /* StartExperience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartExperience.m; sourceTree = "<group>"; };
 		9BAA2D741F1FF3900055BA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BAA2D761F1FF3900055BA0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BAA2D791F1FF3900055BA0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +53,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9B6D26AD1F24164F002FAAE3 /* UX */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D26AF1F24166F002FAAE3 /* Common */,
+				9B6D26AE1F24165F002FAAE3 /* Start */,
+				9BAA2D731F1FF3900055BA0D /* Main.storyboard */,
+			);
+			path = UX;
+			sourceTree = "<group>";
+		};
+		9B6D26AE1F24165F002FAAE3 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				9BAA2D701F1FF3900055BA0D /* StartExperience.h */,
+				9BAA2D711F1FF3900055BA0D /* StartExperience.m */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		9B6D26AF1F24166F002FAAE3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		9BAA2D611F1FF3900055BA0D = {
 			isa = PBXGroup;
 			children = (
+				9B6D26AC1F24154B002FAAE3 /* Podfile */,
 				9BAA2D6C1F1FF3900055BA0D /* FitnessProjectOneWeek */,
 				9BAA2D6B1F1FF3900055BA0D /* Products */,
 				D8D3EF13F9307C456C6F3B98 /* Pods */,
@@ -73,11 +101,9 @@
 		9BAA2D6C1F1FF3900055BA0D /* FitnessProjectOneWeek */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D26AD1F24164F002FAAE3 /* UX */,
 				9BAA2D6D1F1FF3900055BA0D /* AppDelegate.h */,
 				9BAA2D6E1F1FF3900055BA0D /* AppDelegate.m */,
-				9BAA2D701F1FF3900055BA0D /* ViewController.h */,
-				9BAA2D711F1FF3900055BA0D /* ViewController.m */,
-				9BAA2D731F1FF3900055BA0D /* Main.storyboard */,
 				9BAA2D761F1FF3900055BA0D /* Assets.xcassets */,
 				9BAA2D781F1FF3900055BA0D /* LaunchScreen.storyboard */,
 				9BAA2D7B1F1FF3900055BA0D /* Info.plist */,
@@ -216,7 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BAA2D721F1FF3900055BA0D /* ViewController.m in Sources */,
+				9BAA2D721F1FF3900055BA0D /* StartExperience.m in Sources */,
 				9BAA2D7D1F1FF3900055BA0D /* main.m in Sources */,
 				9BAA2D6F1F1FF3900055BA0D /* AppDelegate.m in Sources */,
 			);
