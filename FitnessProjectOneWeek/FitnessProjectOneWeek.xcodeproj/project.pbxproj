@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		506FE9A43719A58930B70560 /* libPods-FitnessProjectOneWeek.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0E1FE68A8054CE4F45B842F /* libPods-FitnessProjectOneWeek.a */; };
+		9B6D26B21F241723002FAAE3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D26B11F241723002FAAE3 /* MainViewController.m */; };
+		9B6D26B61F241763002FAAE3 /* ThreadingUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D26B51F241763002FAAE3 /* ThreadingUtils.m */; };
 		9BAA2D6F1F1FF3900055BA0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA2D6E1F1FF3900055BA0D /* AppDelegate.m */; };
 		9BAA2D721F1FF3900055BA0D /* StartExperience.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAA2D711F1FF3900055BA0D /* StartExperience.m */; };
 		9BAA2D751F1FF3900055BA0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAA2D731F1FF3900055BA0D /* Main.storyboard */; };
@@ -19,6 +21,10 @@
 /* Begin PBXFileReference section */
 		3489970122AED83F48CC0B1A /* Pods-FitnessProjectOneWeek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessProjectOneWeek.release.xcconfig"; path = "Pods/Target Support Files/Pods-FitnessProjectOneWeek/Pods-FitnessProjectOneWeek.release.xcconfig"; sourceTree = "<group>"; };
 		9B6D26AC1F24154B002FAAE3 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9B6D26B01F241723002FAAE3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9B6D26B11F241723002FAAE3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9B6D26B41F241763002FAAE3 /* ThreadingUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadingUtils.h; sourceTree = "<group>"; };
+		9B6D26B51F241763002FAAE3 /* ThreadingUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadingUtils.m; sourceTree = "<group>"; };
 		9BAA2D6A1F1FF3900055BA0D /* FitnessProjectOneWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessProjectOneWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAA2D6D1F1FF3900055BA0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BAA2D6E1F1FF3900055BA0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,8 +81,19 @@
 		9B6D26AF1F24166F002FAAE3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D26B01F241723002FAAE3 /* MainViewController.h */,
+				9B6D26B11F241723002FAAE3 /* MainViewController.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		9B6D26B31F24174D002FAAE3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D26B41F241763002FAAE3 /* ThreadingUtils.h */,
+				9B6D26B51F241763002FAAE3 /* ThreadingUtils.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		9BAA2D611F1FF3900055BA0D = {
@@ -101,6 +118,7 @@
 		9BAA2D6C1F1FF3900055BA0D /* FitnessProjectOneWeek */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D26B31F24174D002FAAE3 /* Utilities */,
 				9B6D26AD1F24164F002FAAE3 /* UX */,
 				9BAA2D6D1F1FF3900055BA0D /* AppDelegate.h */,
 				9BAA2D6E1F1FF3900055BA0D /* AppDelegate.m */,
@@ -155,6 +173,7 @@
 				TargetAttributes = {
 					9BAA2D691F1FF3900055BA0D = {
 						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -245,6 +264,8 @@
 				9BAA2D721F1FF3900055BA0D /* StartExperience.m in Sources */,
 				9BAA2D7D1F1FF3900055BA0D /* main.m in Sources */,
 				9BAA2D6F1F1FF3900055BA0D /* AppDelegate.m in Sources */,
+				9B6D26B61F241763002FAAE3 /* ThreadingUtils.m in Sources */,
+				9B6D26B21F241723002FAAE3 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -365,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -377,10 +398,14 @@
 			baseConfigurationReference = AAAF1964047AEE72DCF612D8 /* Pods-FitnessProjectOneWeek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = FitnessProjectOneWeek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Rush.FitnessProjectOneWeek;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.dmx.teamspace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e0a88b6b-51a5-47ec-99e9-f0266caf611d";
+				PROVISIONING_PROFILE_SPECIFIER = "TeamSpace Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -390,10 +415,14 @@
 			baseConfigurationReference = 3489970122AED83F48CC0B1A /* Pods-FitnessProjectOneWeek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = UBF8T346G9;
 				INFOPLIST_FILE = FitnessProjectOneWeek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Rush.FitnessProjectOneWeek;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.dmx.teamspace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e0a88b6b-51a5-47ec-99e9-f0266caf611d";
+				PROVISIONING_PROFILE_SPECIFIER = "TeamSpace Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

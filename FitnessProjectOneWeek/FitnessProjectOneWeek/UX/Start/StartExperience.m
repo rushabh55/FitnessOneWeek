@@ -12,7 +12,7 @@
 #import <AFNetworking.h>
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginButton.h>
-
+#import "ThreadingUtils.h"
 @interface StartExperience ()
 
 @end
@@ -27,7 +27,6 @@
     [self.view addSubview:loginButton];
     
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void) viewDidAppear:(BOOL)animated
@@ -44,7 +43,9 @@
          NSString *email = [dictionary objectForKey:@"email"];
          if (email.length)
          {
-             
+             [ThreadingUtils onMainThreadSyncSafe:^{
+                 [self performSegueWithIdentifier:@"pushMain" sender:self];
+             }];
          }
      }];
 }
