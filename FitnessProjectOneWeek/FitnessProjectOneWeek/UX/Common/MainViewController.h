@@ -10,6 +10,7 @@
 @import CoreVideo;
 @import AVFoundation;
 
-@interface MainViewController : UIViewController<AVCaptureVideoDataOutputSampleBufferDelegate>
+@interface MainViewController : UIViewController<AVCaptureVideoDataOutputSampleBufferDelegate, AVCapturePhotoCaptureDelegate>
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *cameraViewHeight;
 
 @end
